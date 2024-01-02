@@ -32,18 +32,10 @@ To run the Decentralize Decentralized File Sharing Applicatioin locally, follow 
    npx hardhat test
    ```  
 
-## Acknowledgements
+## Resources
 
-Decentralize File Sharing Project is built using the following technologies:
-
-- [Pinata](https://www.pinata.cloud/) - Pinata is an IPFS pinning service that makes IPFS easy for creators
-- [Hardhat](https://hardhat.org/) - Hardhat is a development environment for Ethereum software
-- [Solidity](https://docs.soliditylang.org/) - The smart contract programming language for Ethereum.
-- [Metamask](https://metamask.io/)  - MetaMask is a software cryptocurrency wallet used to interact with the Ethereum blockchain.
-- [React](https://react.dev/) -React is used for building interactive user interfaces and web applications quickly and efficiently.
-
-
-
+- [Pancake swap Interface Libraries](https://github.com/pancakeswap/pancake-swap-periphery/tree/master) 
+- [Hardhat Testing]([https://hardhat.org/](https://hardhat.org/tutorial/testing-contracts))
 
 
 
