@@ -22,13 +22,17 @@ npx hardhat test
 
 
 
-Flash Loans: A feature in DeFi that allows borrowing large amounts of assets for a short duration (within the same transaction) without collateral.
+#### Flash Loans:
+A feature in DeFi that allows borrowing large amounts of assets for a short duration (within the same transaction) without collateral.
 
-Arbitrage: The practice of exploiting price differences between markets for profit.
+#### Arbitrage: 
+The practice of exploiting price differences between markets for profit.
 
-PancakeSwap: A decentralized exchange (DEX) on the Binance Smart Chain (BSC).
+#### PancakeSwap: 
+A decentralized exchange (DEX) on the Binance Smart Chain (BSC).
 
-Solidity: The programming language used to write smart contracts on Ethereum and BSC.
+#### Solidity: 
+The programming language used to write smart contracts on Ethereum and BSC.
 
 # Contract Breakdown:
 
@@ -38,15 +42,19 @@ Constants for addresses of PancakeSwap factory, router, tokens, and other parame
 Variables to store trade amounts and balances.
 ## Functions:
 
-checkResult: Checks if the arbitrage was profitable.
+#### checkResult: 
+Checks if the arbitrage was profitable.
 
-getBalanceOfToken: Returns the balance of a token held by the contract.
+#### getBalanceOfToken: 
+Returns the balance of a token held by the contract.
 
-placeTrade: Executes a token swap using PancakeSwap's router.
+#### placeTrade: 
+Executes a token swap using PancakeSwap's router.
 
-initiateArbitrage: Triggers the arbitrage process by borrowing tokens and calling pancakeCall.
+#### initiateArbitrage: 
+Triggers the arbitrage process by borrowing tokens and calling pancakeCall.
 
-pancakeCall: Handles the logic within the flash loan transaction, including:
+#### pancakeCall: Handles the logic within the flash loan transaction, including:
     Security checks
     
     Decoding data
