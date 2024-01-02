@@ -16,7 +16,8 @@ npx hardhat run scripts/deploy.js
 
 Pancakeswap use UniswapV2 (Pancakeswap made using fork of Uniswap) -> That why we use interfaces & libraries of Uniswap
 edit harhat.config.js file
-__________________________________Interfaces used________________________________________________________________
+#
+# Interfaces used 
 
 IUniswapV2Factory 
     -> it deals with liquidity pool
@@ -32,7 +33,7 @@ IUniswapV2Pair
 IUniswapV2Router01(version 1)    &    IUniswapV2Router02(version 2)
     -> Responsible for swaps and providing liquidity in Uniswap Protocol
 
-__________________________________Libraries used________________________________________________________________
+ Libraries used 
 
 Address
     ->Returns true if 
