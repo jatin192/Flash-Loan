@@ -63,15 +63,7 @@ describe("Flash_Loan",()=>
             "trade2Coin = ",await Flash_Loan_i.trade2Coin(),
             "trade3Coin = ",await Flash_Loan_i.trade3Coin()
         )
-        // assert(tx_arbitrage);
-    })
-    it("Printing",async()=>
-    {
-        console.log(
-            "trade1Coin = ",await Flash_Loan_i.trade1Coin(),
-            "trade2Coin = ",await Flash_Loan_i.trade2Coin(),
-            "trade3Coin = ",await Flash_Loan_i.trade3Coin()
-        )
+        assert(tx_arbitrage);
     })
     
 })

@@ -55,6 +55,9 @@ import "hardhat/console.sol";
 contract Flash_Loan 
 {
     using SafeERC20 for IERC20; 
+    uint256 public trade1Coin;                // BUSD -> CROX
+    uint256 public trade2Coin;               // CROX -> CAKE
+    uint256 public trade3Coin;              // CAKE -> BUSD
 
 //_____________________________________Variables________________________________________________________________________________________________________________________________
 
@@ -187,9 +190,9 @@ contract Flash_Loan
         //         /          \
         //        /____________\
         //      CAKE          CROX
-        uint256 trade1Coin = placeTrade(BUSD, CROX, loanAmount);                    // BUSD -> CROX
-        uint256 trade2Coin = placeTrade(CROX, CAKE, trade1Coin);                    // CROX -> CAKE
-        uint256 trade3Coin = placeTrade(CAKE, BUSD, trade2Coin);                    // CAKE -> BUSD
+        trade1Coin = placeTrade(BUSD, CROX, loanAmount);                    // BUSD -> CROX
+        trade2Coin = placeTrade(CROX, CAKE, trade1Coin);                    // CROX -> CAKE
+        trade3Coin = placeTrade(CAKE, BUSD, trade2Coin);                    // CAKE -> BUSD
 
         bool profit_Check = checkResult(repayAmount, trade3Coin);                      // Check Profitability
         require(profit_Check, "Arbitrage not profitable");
