@@ -35,8 +35,8 @@ To run the Decentralize Decentralized File Sharing Applicatioin locally, follow 
 ## Resources
 
 - [Pancake swap Interface Libraries](https://github.com/pancakeswap/pancake-swap-periphery/tree/master) 
-- [Hardhat Testing]([https://hardhat.org/](https://hardhat.org/tutorial/testing-contracts))
-
+- [Hardhat Testing](https://hardhat.org/tutorial/testing-contracts)
+- [BUSD WHALE Mainnet Accounts](https://www.coincarp.com/currencies/binanceusd/richlist/)
 
 
 ## Key Components:
