@@ -119,42 +119,7 @@ Pancakeswap use UniswapV2 (Pancakeswap made using fork of Uniswap) -> That why w
 edit harhat.config.js file
 
 #
-# Interfaces used 
 
-IUniswapV2Factory 
-    -> it deals with liquidity pool
-
-IERC20
-    -> transferring tokens
-    -> querying the balance of an address
-    -> approving third parties to spend tokens on your behalf(allowance)
-
-IUniswapV2Pair 
-    -> get the address of tokens in liquidity pool
-
-IUniswapV2Router01(version 1)    &    IUniswapV2Router02(version 2)
-    -> Responsible for swaps and providing liquidity in Uniswap Protocol
-#
-# Libraries used 
-##
-Address
-    ->Returns true if 
-        ->`address` is a contract.
-    ->Retruns False if(unsafe) 
-        -> an EOA
-        -> an address where a contract lived, but was destroyed
-        -> a contract in construction
-        -> an address where a contract will be created
-
-SafeERC20
-    -> provide safe methods for interacting with ERC20 token(no Vulnerabilies)
-
-SafeMath
-    -> prevent overflow & underflow
-
-UniswapV2Library
-    -> Return Current reserve of Uniswap V2 pair function 
-    -> getReserves(address factory,address tokenA,address tokenB)
         
         
         
