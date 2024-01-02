@@ -1,6 +1,6 @@
 // you need to impersonate account availabe on mainnet  ->  we use the mainnet accounts to check our smart contract
 
-let {expect,assert} = requre("chai");
+let {expect,assert} = require("chai");
 let {ethers,waffle} = require("hardhat");
 let {fund_Contract} = require("../utils/utilities");
 let {abi}= require("../artifacts/contracts/interfaces/IERC20.sol/IERC20.json");
@@ -16,12 +16,13 @@ describe("Flash_Loan",()=>
     let CROX = "0x2c094F5A7D1146BB93850f629501eB749f6Ed491";
     let CAKE = "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82";
 
-    let busd_contract_instance = ethers.Contract(BUSD,abi,provider);
+    let busd_contract_instance = new ethers.Contract(BUSD,abi,provider);
     beforeEach(async()=>
     {
         let WHALE_balance = await provider.getBalance(BUSD_WHALE);
         console.log("WHALE_balance =",WHALE_balance);
-        it("Testin",()=>{})
+        expect(WHALE_balance).not.equal("0");
     })
+    it("Testing",()=>{})
 })
 
