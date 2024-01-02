@@ -1,5 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
-require("@nomiclabs/hardhat-waffle");  //waffle is old 
+require("@nomiclabs/hardhat-waffle");  // waffle is old 
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -12,8 +12,9 @@ module.exports = {
   },
   networks: {
     hardhat: {
-      forking: {
-        url: "https://bsc-dataseed1.binance.org/", // == copy Local copy of binance chain in PC  (binance RPC)
+      forking: {   // we are not working on bsc Mainnet chain we are working on forked bsc Mainnet chain
+               //Public RPC Nodes
+        url: "https://bsc-dataseed1.binance.org/", // forking == local copy of actual binance chain in PC  (binance RPC)   -> https://docs.bscscan.com/misc-tools-and-utilities/public-rpc-nodes
       },
     },
   },
